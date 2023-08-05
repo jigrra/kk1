@@ -1,0 +1,368 @@
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+/*header css starts*/
+.header{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: white;
+   display: flex;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   box-shadow:;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 20rem;
+   padding-left: 10rem;
+}
+
+.header .logo{
+   font-size: 2.5rem;
+   color:black;
+}
+
+.header .navbar a{
+   font-size: 2rem;
+   margin-left: 2rem;
+   color:black;
+}
+
+.header .navbar a:hover{
+   color:purple;
+}
+
+
+
+/*header css ends*/
+
+/*section 1 css first*/
+.home{
+   padding:0;
+}
+
+.home .slide{
+   text-align: center;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover !important;
+   background-position: center !important;
+   min-height: 60rem;
+}
+
+.content{
+   width: 85rem;
+   display: none;
+}
+
+.content{
+   display: inline-block;
+}
+
+ .content span{
+   display: block;
+   font-size: 2.2rem;
+   color:white;
+   padding-bottom: 1rem;
+   animation:fadeIn .2s linear backwards .2s;
+}
+
+.content h3{
+   font-size: 6vw;
+   color:var(--white);
+   text-transform: uppercase;
+   line-height: 1;
+   text-shadow: var(--text-shadow);
+   padding:1rem 0;
+   animation:fadeIn .2s linear backwards .4s;
+}
+
+.content .btn{
+   animation:fadeIn .2s linear backwards .6s;
+}
+.btn{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+}
+
+.btn:hover{
+   background: var(--main-color);
+}
+
+/*sextion 1 css ends*/
+
+/*section css starts*/
+.services{
+   padding-right: 10rem;
+   padding-left: 10rem;
+}
+.services .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+   gap: 1.5rem;
+}
+
+.services .box-container .boxx{
+   padding:2rem 2rem;
+   text-align: center;
+   background: var(--main-color);
+   cursor: pointer;
+}
+
+.services .box-container .boxx:hover{
+   background: var(--black);
+}
+
+.services .box-container .boxx img{
+   height: 7rem;
+}
+
+.services .box-container .boxx h3{
+   color:var(--white);
+   font-size: 1.7rem;
+   padding-top: 1rem;
+}
+
+.heading-title{
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 6rem;
+   text-transform: uppercase;
+   color:var(--black);
+}
+
+
+/*section css ends*/
+
+/*about  css starts*/
+.home-about{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.home-about .image{
+   flex:1 1 41rem;
+}
+
+.home-about .image img{
+   width: 100%;
+}
+
+.home-about .content{
+   flex:1 1 41rem;
+   padding:3rem;
+   background: var(--light-bg);
+}
+
+.home-about .content h3{
+   font-size: 3rem;
+   color:var(--black);
+}
+
+.home-about .content p{
+   font-size: 1.5rem;
+   padding:1rem 0;
+   line-height: 2;
+   color:var(--black);
+}
+.btn{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+}
+
+.btn:hover{
+   background: var(--main-color);
+}
+/*about css ends*/
+
+/*packages css start*/
+.home-packages{
+   background: #eee;
+}
+
+.heading-title{
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 6rem;
+   text-transform: uppercase;
+   color:#222;
+}
+
+.home-packages .box-container{
+   display: grid; /* image in line */
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem; /* gap between image */
+   padding: 10rem;
+}
+
+.home-packages .box-container .box{
+   border: .1rem solid black;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+   background: #fff;
+}
+
+.home-packages .box-container .box:hover .image img{
+   transform: scale(1.1); /*zoom image*/
+}
+
+.home-packages .box-container .box .image{
+   height: 25rem;
+   overflow: hidden; image dont go outside the box
+}
+
+.home-packages .box-container .box .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;  /*fit the image according to border */
+   transition: .2s linear; /*thoda smooth */
+}
+
+.home-packages .box-container .box .contentt{
+   padding:2rem; /* box mai space */
+   text-align: center;
+   color: pink;
+}
+
+.home-packages .box-container .box .contentt h3{
+   font-size: 2.5rem;
+   color:black;
+}
+.home-packages .box-container .box .contentt p{
+   font-size: 1.5rem;
+   color:#777;
+   line-height: 2;
+   padding:1rem 0;
+}
+
+
+.pk-btn{
+   display: inline-block;
+   background: black;
+   margin-top: 1rem;
+   color:white;
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   height: 40px;
+}
+
+.pk-btn:hover{
+   background:#8e44ad;
+}
+
+.home-packages .load-more{
+   text-align: center;
+   margin-top: 2rem;
+}
+
+/*packges css end*/
+
+/*offer css starts*/
+.home-offer{
+   text-align: center;
+}
+
+.home-offer .content{
+   max-width:70rem;
+   margin:0 auto;
+}
+
+.home-offer .content h3{
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+}
+
+.home-offer .content p{
+   font-size: 1.5rem;
+   color:var(--light-black);
+   line-height: 2;
+   padding:1rem 0;
+}
+/*offer css ends*/
+/*footer css starts*/
+.footer{
+   background: url(images/footer.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 3rem;
+   padding-left: 10rem;
+}
+
+.footer .box-container .box h3{
+   color:var(--white);
+   font-size: 2.5rem;
+   padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+   color:var(--light-white);
+   font-size: 1.5rem;
+   padding-bottom: 1.5rem;
+   display: block;
+}
+
+.footer .box-container .box a i{
+   color:var(--main-color);
+   padding-right: .5rem;
+   transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+   padding-right: 2rem;
+}
+
+.footer .credit{
+   text-align: center;
+   padding-top: 3rem;
+   margin-top: 3rem;
+   border-top: .1rem solid var(--light-white);
+   font-size: 2rem;
+   color:var(--white);
+}
+
+.footer .credit span{
+   color:var(--main-color);
+}
+/*footer css end*/
+:root{
+   --main-color:#8e44ad;
+   --black:#222;
+   --white:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
